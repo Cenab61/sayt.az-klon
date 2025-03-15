@@ -367,7 +367,8 @@ function navBarDropdown() {
 
 function culcPage(id) {
   if (id == 2) {
-    window.location.href = "http://127.0.0.1:5500/sayt.az_clone/culc.htm";
+    
+    window.location.href = `<a href="${'http://127.0.0.1:5500/sayt.az_clone/index2.htm'}"></a>`;
   }
 }
 
