@@ -297,12 +297,12 @@ function navBarDropdown() {
                             (item) => `
                           
                           <li>
-                                            <a href="#" class="flex items-center h-auto xsm:h-20 px-4 hover:bg-gray-100 ">
+                                            <a onclick="culcage(${item.id})" href="culc.htm" class="flex items-center h-auto xsm:h-20 px-4 hover:bg-gray-100 ">
                                                 <div class="p-4 rounded-lg mr-2 bg-[#dbeafe]  hidden lg:block">
                                                     <img alt="navbar-icon" fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1" class="max-w-[28px]" src="${item.icon}" style="color: transparent;"/>
                                                 </div>
                                                 <div class="flex flex-col">
-                                                    <h3 onclick=culcPage(${item.id})>${item.title}</h3>
+                                                    <h3 >${item.title}</h3>
                                                     <p class="text-slate-500 lg:text-sm text-xs font-semibold ">${item.description}</p>
                                                 </div>
                                             </a>
@@ -367,9 +367,10 @@ function navBarDropdown() {
 
 function culcPage(id) {
   if (id == 2) {
-    window.location.href = "http://127.0.0.1:5500/sayt.az_clone/index2.htm?id=2"   ;
+    window.location.href = "http://127.0.0.1:5500/sayt.az_clone/culc.htm"   ;
   }
 }
+
 
 navBarDropdown();
 
